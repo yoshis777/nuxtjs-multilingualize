@@ -32,4 +32,11 @@ $ npm start
 $ npm run generate
 ```
 
+## PWA対応
+```bash
+npm install '@nuxtjs/pwa' --save
+npm run build
+npm run start
+```
+
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

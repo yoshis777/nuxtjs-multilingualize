@@ -52,7 +52,22 @@ export default {
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
+    '@nuxtjs/pwa',
   ],
+  workbox: {
+     dev: true, //開発環境でもPWAできるようにする
+  },
+  manifest: {
+    name: 'PWATest',
+    short_name: 'PWA',
+    title: 'PWATest',
+    'og:title': 'PWATest',
+    description: 'PWATest',
+    'og:description': 'PWATest',
+    lang: 'ja',
+    theme_color: '#ffffff',
+    background_color: '#ffffff'
+  },
 
   /*
   ** Build configuration
